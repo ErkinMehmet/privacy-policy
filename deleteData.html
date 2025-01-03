@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Account Request</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            color: #d32f2f;
+        }
+        .content {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .button {
+            background-color: #d32f2f;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+
+<div class="content">
+    <h1>Request Account Deletion</h1>
+    <p>We respect your privacy, and if you'd like to delete your account and all associated data, please follow the steps below:</p>
+
+    <ol>
+        <li>Fill out the form below with your account details.</li>
+        <li>Click the "Request Deletion" button to send your request.</li>
+        <li>Our team will process your request and notify you once your account and data have been deleted.</li>
+    </ol>
+
+    <h3>Request Form:</h3>
+    <form action="mailto:fernandosanchezmontevideo@gmail.com" method="POST">
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="reason">Reason for Deletion (Optional):</label><br>
+        <textarea id="reason" name="reason" rows="4" cols="50"></textarea><br><br>
+        
+        <label for="dataDeletion">Please select the data you would like deleted:</label><br>
+        <input type="checkbox" id="personalInfo" name="dataDeletion" value="Personal Information">
+        <label for="personalInfo">Personal Information (name, email, etc.)</label><br>
+        <input type="checkbox" id="activity" name="dataDeletion" value="Activity History">
+        <label for="activity">Activity History (usage logs, preferences, etc.)</label><br>
+        <input type="checkbox" id="allData" name="dataDeletion" value="All Data">
+        <label for="allData">All Data</label><br><br>
+        
+        <input type="submit" value="Request Deletion" class="button">
+    </form>
+
+    <h3>Data Retention Policy:</h3>
+    <p>We will delete all the selected data as soon as possible. Some data may need to be retained for legal, financial, or operational purposes, such as transaction history or invoices. Any retained data will be kept in accordance with our data retention policy, which specifies that we retain data for up to 30 days after deletion requests are processed.</p>
+    
+    <p>If you have any questions or concerns, feel free to contact our support team at <a href="mailto:support@yourapp.com">support@yourapp.com</a>.</p>
+</div>
+
+</body>
+</html>
